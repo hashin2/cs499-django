@@ -62,6 +62,7 @@ class MotionEvent(AbstractBaseModel):
      event_x = models.IntegerField(null=False, blank= False, default=0)
      event_y = models.IntegerField(null=False, blank= False, default=0)
      time = models.IntegerField(null=False,blank=False,default=0)
+     #We need to look into making this an actual time field
 
      def to_dict(self):
         d = OrderedDict()
